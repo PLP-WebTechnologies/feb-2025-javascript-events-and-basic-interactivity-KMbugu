@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Playground 🎉</h1>
+
+        <!-- Interactive Button -->
+        <section>
+            <h2>Interactive Button</h2>
+            <button id="magicButton">Click Me!</button>
+        </section>
+
+        <!-- Image Gallery -->
+        <section>
+            <h2>Image Gallery</h2>
+            <div class="gallery">
+                <img src="https://picsum.photos/300/200?random=1" alt="Gallery Image 1" class="gallery-img active">
+                <img src="https://picsum.photos/300/200?random=2" alt="Gallery Image 2" class="gallery-img">
+                <img src="https://picsum.photos/300/200?random=3" alt="Gallery Image 3" class="gallery-img">
+            </div>
+            <div class="gallery-controls">
+                <button class="gallery-prev">Previous</button>
+                <button class="gallery-next">Next</button>
+            </div>
+        </section>
+
+        <!-- Tabs -->
+        <section>
+            <h2>Tabs</h2>
+            <div class="tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="tab1">Tab 1</button>
+                    <button class="tab-button" data-tab="tab2">Tab 2</button>
+                    <button class="tab-button" data-tab="tab3">Tab 3</button>
+                </div>
+                <div class="tab-content">
+                    <div id="tab1" class="tab-pane active">Welcome to Tab 1! This is some cool content.</div>
+                    <div id="tab2" class="tab-pane">Tab 2 has even more exciting stuff!</div>
+                    <div id="tab3" class="tab-pane">Tab 3 is the best yet!</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation -->
+        <section>
+            <h2>Form Validation</h2>
+            <form id="userForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                    <span class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <span class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password (min 8 chars):</label>
+                    <input type="password" id="password" required>
+                    <span class="error"></span>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
